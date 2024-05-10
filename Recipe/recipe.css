@@ -1,0 +1,79 @@
+/*
+    Melben Kian R. Gabiana
+    3rd Year BSCS
+*/
+
+/* Headings format */
+h1, h2 {
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+    margin: 0px auto 0px auto;
+    padding:5px;
+}
+h1 span, h2 span { 
+    background-color: rgb(240, 240, 240);
+}
+h2 {
+    text-align: left;
+}
+h1, h2, a:link, a:visited {
+    color: rgb(164, 164, 0);
+}
+
+/* Body format */
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    color: rgb(64, 64, 64);
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+ }
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(164, 164, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(164, 164, 0) transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Comments */
+blockquote {
+    font-style: italic;
+    background-color: rgb(255, 255, 168);
+}
+
+/* Unordered list bullet icon change */
+ul {
+    list-style-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
+}
